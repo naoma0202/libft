@@ -1,18 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalpha.c                                       :+:      :+:    :+:   */
+/*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: naomayamamoto <naomayamamoto@student.42    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/06 05:36:57 by naomayamamo       #+#    #+#             */
-/*   Updated: 2024/09/06 05:36:57 by naomayamamo      ###   ########.fr       */
+/*   Created: 2024/09/06 16:06:40 by naomayamamo       #+#    #+#             */
+/*   Updated: 2024/09/06 17:30:33 by naomayamamo      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_isalpha(int c){
-	if((c >= 65 && c <= 90)||(c >= 97 && c <= 123)){
-		return 1;
-	}
-	return 0;
+#include libft.h
+
+size_t ft_strlen (const char *str){
+    int i;
+    i = 0;
+    while(str[i]){
+        i++;
+    }
+    return i;
 }
+
