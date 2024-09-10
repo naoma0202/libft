@@ -1,24 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_memset.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: naomayamamoto <naomayamamoto@student.42    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/06 16:06:40 by naomayamamo       #+#    #+#             */
-/*   Updated: 2024/09/11 07:56:13 by naomayamamo      ###   ########.fr       */
+/*   Created: 2024/09/11 07:47:32 by naomayamamo       #+#    #+#             */
+/*   Updated: 2024/09/11 08:12:31 by naomayamamo      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t ft_strlen (const char *str){
-    
-    int i;
+void *ft_memset(void *buf, int c, size_t len){
+    char *str;
+    size_t i;
+
+    str = (char *)buf;
     i = 0;
-    while(str[i]){
+    while(i<len){
+        str[i] = (unsigned char)c; //int型を1バイトのunsigned char にキャスト。1~256の非負の値
         i++;
     }
-    return i;
+    return (buf)
 }
-

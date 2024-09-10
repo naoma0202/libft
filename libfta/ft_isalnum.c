@@ -1,24 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_isalnum.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: naomayamamoto <naomayamamoto@student.42    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/06 16:06:40 by naomayamamo       #+#    #+#             */
-/*   Updated: 2024/09/11 07:56:13 by naomayamamo      ###   ########.fr       */
+/*   Created: 2024/09/06 16:01:24 by naomayamamo       #+#    #+#             */
+/*   Updated: 2024/09/11 07:29:40 by naomayamamo      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
-
-size_t ft_strlen (const char *str){
-    
-    int i;
-    i = 0;
-    while(str[i]){
-        i++;
-    }
-    return i;
+int ft_isalnum(int c){
+	if((c >= 65 && c <= 90)||(c >= 97 && c <= 123) || (c >= '1' && c <= '9')){
+		return 1;
+	}
+	return 0;
 }
-

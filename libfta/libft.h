@@ -1,24 +1,13 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: naomayamamoto <naomayamamoto@student.42    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/06 16:06:40 by naomayamamo       #+#    #+#             */
-/*   Updated: 2024/09/11 07:56:13 by naomayamamo      ###   ########.fr       */
+/*   Created: 2024/09/11 07:54:01 by naomayamamo       #+#    #+#             */
+/*   Updated: 2024/09/11 07:55:06 by naomayamamo      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
-
-size_t ft_strlen (const char *str){
-    
-    int i;
-    i = 0;
-    while(str[i]){
-        i++;
-    }
-    return i;
-}
-
+#include <stdio.h>

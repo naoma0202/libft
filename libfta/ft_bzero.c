@@ -1,18 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalbum.c                                       :+:      :+:    :+:   */
+/*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: naomayamamoto <naomayamamoto@student.42    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/06 16:01:24 by naomayamamo       #+#    #+#             */
-/*   Updated: 2024/09/06 16:02:31 by naomayamamo      ###   ########.fr       */
+/*   Created: 2024/09/11 08:08:22 by naomayamamo       #+#    #+#             */
+/*   Updated: 2024/09/11 08:12:21 by naomayamamo      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_isalbum(int c){
-	if((c >= 65 && c <= 90)||(c >= 97 && c <= 123) || (c >= '1' && c <= '9')){
-		return 1;
-	}
-	return 0;
+#include "libft.h"
+
+void ft_bzero(void *buf, size_t len){
+    char *str;
+    size_t i;
+    
+    str = (char *)buf;
+    i = 0;
+    while(i < len){
+        str[i] = '0';
+        i++;
+    }
+    return (buf)
 }
