@@ -6,7 +6,7 @@
 /*   By: naomayamamoto <naomayamamoto@student.42    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/11 08:08:22 by naomayamamo       #+#    #+#             */
-/*   Updated: 2024/09/11 08:12:21 by naomayamamo      ###   ########.fr       */
+/*   Updated: 2024/09/11 14:15:09 by naomayamamo      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,5 +22,5 @@ void ft_bzero(void *buf, size_t len){
         str[i] = '0';
         i++;
     }
-    return (buf)
+    return (buf);
 }

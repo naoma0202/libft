@@ -6,7 +6,7 @@
 /*   By: naomayamamoto <naomayamamoto@student.42    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/11 07:47:32 by naomayamamo       #+#    #+#             */
-/*   Updated: 2024/09/11 08:12:31 by naomayamamo      ###   ########.fr       */
+/*   Updated: 2024/09/11 14:15:04 by naomayamamo      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,5 +22,5 @@ void *ft_memset(void *buf, int c, size_t len){
         str[i] = (unsigned char)c; //int型を1バイトのunsigned char にキャスト。1~256の非負の値
         i++;
     }
-    return (buf)
+    return (buf);
 }
